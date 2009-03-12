@@ -1,0 +1,16 @@
+# This api is created by Leo Chan on 10/29/2007.
+# There is no license requirement.  Use it or copy any part of the code that you want to use.
+# Use it at your own risk.  I am not liable for anything.  Just want to share it and hope it is useful for you
+# Rillow is a simple ruby wrapper to zillow webservice api: http://www.zillow.com/howto/api/APIOverview.htm
+# It does the web service call and gets the result back for you.  You don't have to know about the url request formate, url encoding or 
+# parsing the result.  The result object is in hash/array format.  So no need to parse xml.
+# You will need to register with zillow to get the Zillow Web Service Identifier first.
+# Go to http://rubyforge.org/projects/rillow/ for project details or to download the latest release
+# Installation:
+# gem install rillow
+# Example code:
+# require 'rubygems'
+# require 'rillow'
+# rillow = Rillow.new('your-zillow-key')
+# result = rillow.get_search_results('2114 Bigelow Ave','Seattle, WA')
+# result.to_hash 
